@@ -2,13 +2,13 @@ trigger:
 - main
 
 stages:
-- stage: VM-SEMA2
+- stage: DeployToVM
   jobs:
   - deployment: InstallApacheAndConfigure
     displayName: "Instalar Apache y Configurar Página"
     
     environment:
-      name: "DEPLOYAPPVM" # Nombre de tu entorno
+      name: "VM-DEVOPS-LINUX" # Nombre de tu entorno
       resourceType: VirtualMachine # Tipo de recurso, en este caso una máquina virtual
 
     strategy:
