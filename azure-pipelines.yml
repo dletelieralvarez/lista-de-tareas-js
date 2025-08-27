@@ -2,7 +2,7 @@ trigger:
 - main
 
 stages:
-- stage: DeployToVM
+- stage: VM-SEMA2
   jobs:
   - deployment: InstallApacheAndConfigure
     displayName: "Instalar Apache y Configurar Página"
